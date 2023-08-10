@@ -3,32 +3,80 @@
     --PrimaryColor: rgb(20, 124, 156);
     --SecondaryColor: rgb(124, 176, 190);
     --gradientColor:  rgb(100, 207, 236);
-    --WhiteColor: rgb(240, 239, 233);
+    --WhiteColor: rgb(202, 200, 189);
     --BlackColor:  rgb(14, 15, 15);
-    --TextColor: rgb(50, 54, 54);
-    --WhiteColerDeam: rgb(209, 208, 201);
+    --TextColor: rgb(74, 77, 77);
+    --WhiteColerDeam: rgb(238, 235, 217);
     --GreyText: rgb(190, 190, 190);
     --InputColor: rgb(239, 239, 239);
     --BodyColor: rgb(240, 246, 246);
     --CardBG: rgb(225, 225, 235);
   }
 
-header{
-    justify-content: center;
+  .header{
     position: fixed;
+    top: 0%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    background-color: var(--WhiteColerDeam);
+    box-shadow: 0px 2px 4px var(--gradientColor);
+    width: 100%;
     z-index: 1000;
 
     .logo{
-        color: black;
-    }
-    
+        color: var(--gradientColor);
+    }  
     @media only screen and (max-width: 768px){
         .navbar{
             position: absolute;
-            width: 80%;
+            width: 60%;
             height: max-content;
-            box-shadow: 1px 2px;
-            top: 6rem;
+            top: 5rem;
+            left: 50%;
+            border-radius: 1rem;
+            background-color: var(--WhiteColerDeam);
+            transform: translate(-50%);
+            box-shadow: 0px 2px 4px var(--gradientColor);
+            transition: 0.3s ease-in-out;
+            flex-direction: column;
+            z-index: 2000;
+
+            .navList{
+                flex-direction: column;
+                width: 100%;
+                margin: auto;
+                padding: 0.5rem 0;
+                
+                .navItem{
+                    padding: 0.5rem 0;
+
+                    .navLink{
+                        color: var(--TextColor);
+                        font-size: .9rem;
+                        font-weight: 600px;
+                    }
+                }
+                .btn{
+                    margin-top: 20px;
+                }
+            }
+            .closeNavbar{
+                color: var(--gradientColor);
+                position: absolute;
+                right: 5%;
+                top: 1rem;
+                &:hover{
+                    color: var(--SecondaryColor);
+                }
+            }
+        }
+    }
+    .toggleNavbar{
+        color: var(--gradientColor);
+        &:hover{
+            color: var(--SecondaryColor);
         }
     }
 }

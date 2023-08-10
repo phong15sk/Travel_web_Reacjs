@@ -1,30 +1,45 @@
-import React  from "react";
+import React from "react";
 import './navbar.css'
-import {MdOutlineTravelExplore} from 'react-icons/md'
-import {PiDotsNineBold} from 'react-icons/pi'
+import { MdOutlineTravelExplore } from 'react-icons/md'
+import { PiDotsNineBold } from 'react-icons/pi'
+import { AiFillCloseCircle } from 'react-icons/ai'
 
 const Navbar = () => {
     return (
         <section className="navBarSection">
             <header className="header flex">
                 <div className="logoDiv">
-                    <a href="#" className="logo flex"> 
-                        <h1> <MdOutlineTravelExplore className='icon'/> Travel</h1>
+                    <a href="#" className="logo flex">
+                        <h1> <MdOutlineTravelExplore className='icon' /> Travel</h1>
                     </a>
                 </div>
-                <div className="navbar">
-                    <ul className="navList grid">
-                        <li className="navItem">Home</li>
-                        <li className="navItem">Packages</li>
-                        <li className="navItem">Shop</li>
-                        <li className="navItem">About</li>
-                        <li className="navItem">Pages</li>
-                        <li className="navItem">Contact</li>
+                <div className="navbar flex">
+                    <ul className="navList flex">
+                        <li className="navItem">
+                            <a href="#" className="navLink">Home</a>
+                        </li>
+                        <li className="navItem">
+                            <a href="#" className="navLink">Packages</a></li>
+                        <li className="navItem">
+                            <a href="#" className="navLink">Shop</a>
+                        </li>
+                        <li className="navItem">
+                            <a href="#" className="navLink">About</a>
+                        </li>
+                        <li className="navItem">
+                            <a href="#" className="navLink">Pages</a>
+                        </li>
+                        <li className="navItem">
+                            <a href="#" className="navLink">Contact</a>
+                        </li>
+                        <button className="book btn">
+                            <a href="#">BOOK NOW</a>
+                        </button>
                     </ul>
-                    <button className="btn book">BOOK NOW</button>
+                    <div className="closeNavbar"><AiFillCloseCircle className="icon" /></div>
                 </div>
                 <div className="toggleNavbar">
-                <PiDotsNineBold className="icon"/>
+                    <PiDotsNineBold className="icon" />
                 </div>
             </header>
         </section>

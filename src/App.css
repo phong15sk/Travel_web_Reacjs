@@ -11,7 +11,7 @@
   --PrimaryColor: rgb(20, 124, 156);
   --SecondaryColor: rgb(124, 176, 190);
   --gradientColor:  rgb(100, 207, 236);
-  --WhiteColor: rgb(240, 239, 233);
+  --WhiteColor: rgb(255, 255, 255);
   --BlackColor:  rgb(14, 15, 15);
   --TextColor: rgb(50, 54, 54);
   --WhiteColerDeam: rgb(209, 208, 201);
@@ -29,8 +29,11 @@ li{
   list-style: none;
 }
 
-.section{
+section{
   padding: 4rem 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container{
@@ -63,8 +66,9 @@ li{
 }
 
 .btn a{
-  color: var(--WhiteColor);
-  font-weight: 500;
+  color: white;
+  font-size: .9rem;
+  font-weight: 600px;
 }
 
 .btn:hover{
