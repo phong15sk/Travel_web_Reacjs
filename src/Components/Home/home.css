@@ -3,11 +3,11 @@
   --PrimaryColor: rgb(20, 124, 156);
   --SecondaryColor: rgb(124, 176, 190);
   --gradientColor: rgb(100, 207, 236);
-  --WhiteColor: rgb(255, 255, 255);
+  --WhiteColor: rgb(231, 222, 222);
   --BlackColor: rgb(14, 15, 15);
-  --TextColor: rgb(50, 54, 54);
-  --WhiteColerDeam: rgb(209, 208, 201);
-  --GreyText: rgb(139, 136, 136);
+  --TextColor: rgb(74, 77, 77);
+  --WhiteColerDeam: rgb(248, 248, 248);
+  --GreyText: rgb(141, 126, 126);
   --InputColor: rgb(239, 239, 239);
   --BodyColor: rgb(240, 246, 246);
   --CardBG: rgb(225, 225, 235);
@@ -40,7 +40,7 @@ video {
   align-items: stretch;
   justify-content: center;
   margin: auto;
-  color: var(--WhiteColor);
+  color: var(--WhiteColerDeam);
 }
 .homeContent .textDiv {
   padding: 2rem 0;
