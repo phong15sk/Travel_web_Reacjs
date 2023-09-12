@@ -3,17 +3,28 @@ import './navbar.css'
 import { MdOutlineTravelExplore } from 'react-icons/md'
 import { PiDotsNineBold } from 'react-icons/pi'
 import { AiFillCloseCircle } from 'react-icons/ai'
+import { useState } from "react";
 
 const Navbar = () => {
+    const [activeNavbar, setActiveNavbar] = useState('navbar')
+
+    const onShowNavBar = () => {
+        setActiveNavbar('navbar activeNavbar')
+    }
+
+    const onCloseNavBar = () => {
+        setActiveNavbar('navbar')
+    }
+
     return (
-        <section className="navBarSection">
+        <div className="navBarSection">
             <header className="header flex">
                 <div className="logoDiv">
                     <a href="#" className="logo flex">
                         <h1> <MdOutlineTravelExplore className='icon' /> Travel</h1>
                     </a>
                 </div>
-                <div className="navbar flex">
+                <div className={activeNavbar} >
                     <ul className="navList flex">
                         <li className="navItem">
                             <a href="#" className="navLink">Home</a>
@@ -36,13 +47,13 @@ const Navbar = () => {
                             <a href="#">BOOK NOW</a>
                         </button>
                     </ul>
-                    <div className="closeNavbar"><AiFillCloseCircle className="icon" /></div>
+                    <div className="closeNavbar" onClick={() => onCloseNavBar()}><AiFillCloseCircle className="icon" /></div>
                 </div>
-                <div className="toggleNavbar">
+                <div className="toggleNavbar" onClick={() => onShowNavBar()}>
                     <PiDotsNineBold className="icon" />
                 </div>
             </header>
-        </section>
+        </div>
     )
 }
 

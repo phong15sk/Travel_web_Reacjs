@@ -1,0 +1,102 @@
+/* Color and styling */
+:root {
+  --PrimaryColor: rgb(20, 124, 156);
+  --SecondaryColor: rgb(124, 176, 190);
+  --gradientColor: rgb(100, 207, 236);
+  --WhiteColor: rgb(255, 255, 255);
+  --BlackColor: rgb(14, 15, 15);
+  --TextColor: rgb(50, 54, 54);
+  --WhiteColerDeam: rgb(209, 208, 201);
+  --GreyText: rgb(139, 136, 136);
+  --InputColor: rgb(239, 239, 239);
+  --BodyColor: rgb(240, 246, 246);
+  --CardBG: rgb(225, 225, 235);
+}
+
+.home {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+video {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+}
+
+.homeContent {
+  z-index: 100;
+  width: 100%;
+  height: max-content;
+  position: relative;
+  display: flex;
+  padding: 8rem 1.5rem 3rem;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  margin: auto;
+  color: var(--WhiteColor);
+
+  .textDiv {
+    padding: 2rem 0;
+
+    .smallText {
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+
+    .homeText {
+      font-size: 1.8rem;
+    }
+  }
+
+  .destinationContent {
+    background-color: var(--WhiteColor);
+    width: max-content;
+    border-radius: 10px;
+    padding: 40px 30px;
+  }
+
+  .destination {
+    padding: 10px 0px;
+    .input{
+      display: flex;   
+    }
+    .icon {
+      font-size: 1.5rem;
+      color: var(--GreyText);
+    }
+
+    .input{
+      width: max-content;
+      padding: 0 1rem;
+      width: 18rem;
+      background-color: var(--WhiteColerDeam);
+      border-radius: 3rem;
+      height: 3rem;
+
+      input{
+        background: none;
+        border: none;
+        outline: none;
+        width: 100%;
+      }
+    }
+
+    label{
+      color: var(--GreyText);
+      font-weight: 500;
+    }
+  }
+
+  .priceLable{
+    justify-content: space-between;
+    .price-total-max{
+      font-weight: bold;
+    }
+  }
+}

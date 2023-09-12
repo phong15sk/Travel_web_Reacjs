@@ -34,15 +34,17 @@
     width: 60%;
     height: -moz-max-content;
     height: max-content;
-    top: 5rem;
+    top: -50rem;
     left: 50%;
     border-radius: 1rem;
     background-color: var(--WhiteColerDeam);
     transform: translate(-50%);
     box-shadow: 0px 2px 4px var(--gradientColor);
-    transition: 0.3s ease-in-out;
+    transition: 1s;
+    transition-timing-function: ease-in-out;
     flex-direction: column;
     z-index: 2000;
+    padding: 10px;
   }
   .header .navbar .navList {
     flex-direction: column;
@@ -69,6 +71,9 @@
   }
   .header .navbar .closeNavbar:hover {
     color: var(--SecondaryColor);
+  }
+  .header .activeNavbar {
+    top: 8rem;
   }
 }
 .header .toggleNavbar {
